@@ -6,7 +6,7 @@ class unicorn {
   constructor(name) {
     this.name = name;
     this.horn = true;
-    this.color = silver;
+    this.color = "silver";
     this.home = "Rainbow Land";
   }
 
@@ -15,6 +15,11 @@ class unicorn {
   }
 }
 
+var garyTheUnicorn = new unicorn("Gary");
+
+garyTheUnicorn.say("Wow! A double rainbow allll the waaaay!");
+
+console.log(garyTheUnicorn);
 
 // Write a class called Vampire
 // it should have a dynamic name property
@@ -34,6 +39,11 @@ class vampire {
     console.log(`I no longer vant to suck your blooood!`);
   }
 }
+
+var garyTheVampire = new vampire("Gary", undefined);
+garyTheVampire.drink();
+
+console.log(garyTheVampire);
 
 
 //  Write a Dragon class
@@ -57,6 +67,12 @@ class dragon {
     }
   }
 }
+
+var garyTheDragon = new dragon("Gary", "Larry", "Magenta");
+
+garyTheDragon.eat(5);
+
+console.log(garyTheDragon);
 
 
 //  BIG CHALLNEGE: Write a Hobbit class
@@ -99,7 +115,6 @@ console.log(hobbit1);
 console.log(hobbit2);
 
 hobbit1.celebrateBirthday(34);
+console.log(hobbit1)
 hobbit1.celebrateBirthday(80);
-
 console.log(hobbit1);
-console.log(hobbit2);
